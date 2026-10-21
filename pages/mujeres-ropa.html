@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ropa Mujer | MOOD✦BOARD</title>
+<!-- CSS PRINCIPAL -->
+<link href="../CSS/style.css" rel="stylesheet"/>
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="../CSS/pages/mujeres-ropa.css" rel="stylesheet"/></head>
+<body>
+<!-- ENCABEZADO -->
+<header class="header">
+<nav class="navbar">
+<a class="logo" href="../index.html">MOOD✦BOARD</a>
+<ul class="nav-menu">
+<li>
+<a href="nosotros.html">Qué somos</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-title" href="#">Tienda ▾</a>
+<div class="dropdown-menu">
+<div>
+<h4>Hombres</h4>
+<a href="hombres-ropa.html">Ropa</a>
+<a href="hombres-accesorios.html">Accesorios</a>
+</div>
+<div>
+<h4>Mujeres</h4>
+<a href="mujeres-ropa.html">Ropa</a>
+<a href="mujeres-accesorios.html">Accesorios</a>
+</div>
+</div>
+</li>
+<li>
+<a href="outlet.html">Outlet</a>
+</li>
+<li>
+<a href="localizanos.html">Localízanos</a>
+</li>
+</ul>
+<div aria-label="Acciones de la tienda" class="nav-actions">
+<button aria-label="Buscar" class="nav-action" title="Buscar" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="M16 16l5 5"></path></svg>
+</button>
+<button aria-label="Favoritos" class="nav-action" title="Favoritos" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20.8 8.8c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10A4.8 4.8 0 0 1 8 4c1.5 0 2.9.7 4 2 1.1-1.3 2.5-2 4-2a4.8 4.8 0 0 1 4.8 4.8Z"></path></svg>
+</button>
+<a aria-label="Carrito de compras" class="nav-action cart" href="carrito.html" title="Carrito">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 9h14l-1 11H6L5 9Z"></path><path d="M9 9V7a3 3 0 0 1 6 0v2"></path></svg>
+<span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</nav>
+</header>
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+<!-- ENCABEZADO DEL CATÁLOGO -->
+<section class="catalog-header">
+<div>
+<p class="eyebrow">MOOD✦BOARD / MUJERES</p>
+<h1>Women's<br/><em>Clothing.</em></h1>
+</div>
+<p class="catalog-description">Prendas esenciales, siluetas contemporáneas y piezas<br/> diseñadas para expresar tu propio mood.</p>
+</section>
+<!-- FILTROS -->
+<section class="catalog-tools">
+<div class="filters">
+<button class="active" data-action-click="filterProducts(&#x27;all&#x27;, this)">Todas</button>
+<button data-action-click="filterProducts(&#x27;blusas&#x27;, this)">Blusas</button>
+<button data-action-click="filterProducts(&#x27;pantalones&#x27;, this)">Pantalones</button>
+<button data-action-click="filterProducts(&#x27;vestidos&#x27;, this)">Vestidos</button>
+<button data-action-click="filterProducts(&#x27;chaquetas&#x27;, this)">Chaquetas</button>
+</div>
+<span class="catalog-count" id="product-count">8 productos</span>
+</section>
+<section class="catalog">
+<section class="products-grid">
+<!-- PRODUCTO 1: BLUSA BLANCA -->
+<article class="product-card" data-category="blusas">
+<img alt="Modelo mujer: Vestido floral ligero" class="product-image inline-style-mujeres-ropa-1" loading="eager" src="../img/mujer_vestido_lunares.webp"/>
+<div class="product-info">
+<p class="product-category">VESTIDOS</p>
+<h3 class="product-name">Vestido floral ligero</h3>
+<p class="product-price">
+                        S/ 89.00
+                    </p>
+<button class="add-cart-btn" data-action-click="agregarAlCarrito(
+                            &#x27;Essential White Blouse&#x27;,
+                            89,
+                            &#x27;https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;amp;fit=crop&amp;amp;w=700&amp;amp;q=85&#x27;
+                        )">
+
+                        ＋ Agregar al carrito
+
+                    </button>
+</div>
+</article>
+<!-- PRODUCTO 2: TOP SATINADO -->
+<article class="product-card" data-category="blusas">
+<img alt="Modelo mujer: Blusa celeste" class="product-image inline-style-mujeres-ropa-2" loading="eager" src="../img/mujer_blusa_volantes.webp"/>
+<div class="product-info">
+<p class="product-category">BLUSAS</p>
+<h3 class="product-name">Blusa celeste</h3>
+<p class="product-price">
+                        S/ 109.00
+                    </p>
+<button class="add-cart-btn" data-action-click="agregarAlCarrito(
+                            &#x27;Soft Satin Top&#x27;,
+                            109,
+                            &#x27;https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&amp;amp;fit=crop&amp;amp;w=700&amp;amp;q=85&#x27;
+                        )">
+
+                        ＋ Agregar al carrito
+
+                    </button>
+</div>
+</article>
+<!-- PRODUCTO 3: PANTALÓN BEIGE -->
+<article class="product-card" data-category="pantalones">
+<img alt="Modelo mujer: Conjunto blanco casual" class="product-image inline-style-mujeres-ropa-3" loading="eager" src="../img/mujer_jeans_blancos.webp"/>
+<div class="product-info">
+<p class="product-category">CONJUNTOS</p>
+<h3 class="product-name">Conjunto blanco casual</h3>
+<p class="product-price">
+                        S/ 139.00
+                    </p>
+<button class="add-cart-btn" data-action-click="agregarAlCarrito(
+                            &#x27;Relaxed Beige Pants&#x27;,
+                            139,
+                            &#x27;https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&amp;amp;fit=crop&amp;amp;w=700&amp;amp;q=85&#x27;
+                        )">
+
+                        ＋ Agregar al carrito
+
+                    </button>
+</div>
+</article>
+<!-- PRODUCTO 4: JEANS -->
+<article class="product-card" data-category="pantalones">
+<img alt="Modelo mujer: Blusa blanca con short ciruela" class="product-image inline-style-mujeres-ropa-4" loading="eager" src="../img/mujer_short_vestir.webp"/>
+<div class="product-info">
+<p class="product-category">CONJUNTOS</p>
+<h3 class="product-name">Blusa blanca con short ciruela</h3>
+<p class="product-price">
+                        S/ 149.00
+                    </p>
+<button class="add-cart-btn" data-action-click="agregarAlCarrito(
+                            &#x27;Straight Denim Jeans&#x27;,
+                            149,
+                            &#x27;https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&amp;amp;fit=crop&amp;amp;w=700&amp;amp;q=85&#x27;
+                        )">
+
+                        ＋ Agregar al carrito
+
+                    </button>
+</div>
+</article>
+<!-- PRODUCTO 5: VESTIDO NEGRO -->
+<article class="product-card" data-category="vestidos">
+<img alt="Modelo mujer: Vestido rojo estampado" class="product-image inline-style-mujeres-ropa-5" loading="eager" src="../img/mujer_vestido_rojo.webp"/>
+<div class="product-info">
+<p class="product-category">VESTIDOS</p>
+<h3 class="product-name">Vestido rojo estampado</h3>
+<p class="product-price">
+                        S/ 159.00
+                    </p>
+<button class="add-cart-btn" data-action-click="agregarAlCarrito(
+                            &#x27;Minimal Black Dress&#x27;,
+                            159,
+                            &#x27;https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&amp;amp;fit=crop&amp;amp;w=700&amp;amp;q=85&#x27;
+                        )">
+
+                        ＋ Agregar al carrito
+
+                    </button>
+</div>
+</article>
+<!-- PRODUCTO 6: VESTIDO MIDI -->
+<article class="product-card" data-category="vestidos">
+<img alt="Modelo mujer: Polo a rayas" class="product-image inline-style-mujeres-ropa-6" loading="eager" src="../img/mujer_polo_rayas.webp"/>
+<div class="product-info">
+<p class="product-category">POLOS</p>
+<h3 class="product-name">Polo a rayas</h3>
+<p class="product-price">
+                        S/ 179.00
+                    </p>
+<button class="add-cart-btn" data-action-click="agregarAlCarrito(
+                            &#x27;Neutral Midi Dress&#x27;,
+                            179,
+                            &#x27;https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&amp;amp;fit=crop&amp;amp;w=700&amp;amp;q=85&#x27;
+                        )">
+
+                        ＋ Agregar al carrito
+
+                    </button>
+</div>
+</article>
+<!-- PRODUCTO 7: CHAQUETA DE CUERO -->
+<article class="product-card" data-category="chaquetas">
+<img alt="Modelo mujer con jeans grises" class="product-image inline-style-mujeres-ropa-7" loading="eager" src="../img/mujer_jeans_gris.webp"/>
+<div class="product-info">
+<p class="product-category">PANTALONES</p>
+<h3 class="product-name">Jeans grises de corte recto</h3>
+<p class="product-price">
+                        S/ 249.00
+                    </p>
+<button class="add-cart-btn" data-action-click="agregarAlCarrito(
+                            &#x27;Classic Leather Jacket&#x27;,
+                            249,
+                            &#x27;https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&amp;amp;fit=crop&amp;amp;w=700&amp;amp;q=85&#x27;
+                        )">
+
+                        ＋ Agregar al carrito
+
+                    </button>
+</div>
+</article>
+<!-- PRODUCTO 8: CHAQUETA CASUAL -->
+</section>
+</section>
+</main>
+<!-- PIE DE PÁGINA -->
+<!-- CARRITO -->
+<script src="../js/carrito.js"></script>
+<!-- FILTROS -->
+<!-- BOTÓN FLOTANTE DEL EQUIPO -->
+<a aria-label="Conoce a nuestro equipo" class="floating-team-button" href="equipo.html" title="Conoce a nuestro equipo">
+<span>✦</span>
+<strong>Nuestro equipo</strong>
+</a>
+<section aria-label="Suscripción al boletín" class="newsletter">
+<div class="newsletter-copy">
+<h2>ÚNETE A LA<br/>COMUNIDAD MOODER</h2>
+<p>Recibe novedades, nuevas colecciones y beneficios exclusivos de MOOD✦BOARD.</p>
+</div>
+<form class="newsletter-form" data-action-submit="subscribeNewsletter(event)">
+<label for="newsletter-email">Déjanos tu correo.</label>
+<div class="newsletter-row">
+<input autocomplete="email" id="newsletter-email" name="email" placeholder="Tu correo electrónico" required="" type="email"/>
+<button type="submit">Unirse al newsletter</button>
+</div>
+<span class="newsletter-note">Al suscribirte aceptas recibir información de MOOD✦BOARD.</span>
+<span aria-live="polite" class="newsletter-message">¡Gracias por unirte a la comunidad MOODER!</span>
+</form>
+</section>
+<footer class="footer">
+<div class="footer-column">
+<h4>Colecciones</h4>
+<a href="hombres-ropa.html">HOMBRE</a>
+<a href="mujeres-ropa.html">MUJER</a>
+<a href="hombres-accesorios.html">ACCESORIOS</a>
+</div>
+<div class="footer-column">
+<h4>Nosotros</h4>
+<a href="nosotros.html">MISIÓN Y VISIÓN</a>
+<a href="equipo.html">PRENSA</a>
+</div>
+<div class="footer-column">
+<h4>Ayuda</h4>
+<a href="localizanos.html">CONTACTO</a>
+<a href="outlet.html">NUESTRAS TIENDAS</a>
+<a href="nosotros.html">TÉRMINOS Y CONDICIONES</a>
+</div>
+<div class="footer-column">
+<h4>Únete a la comunidad MOODER</h4>
+<p>¡HAZTE MIEMBRO Y OBTÉN UN 15% DE DESCUENTO EN EL ARTÍCULO DE MAYOR VALOR!</p>
+<a aria-label="Libro de reclamaciones" class="claims-link" href="https://www.indecopi.gob.pe/libro-de-reclamaciones" rel="noopener" target="_blank" title="Libro de reclamaciones">
+<svg aria-hidden="true" class="claims-book-icon" viewbox="0 0 48 48">
+<path d="M7 9.5c7-2.2 12.2-.8 17 3.1v27c-4.8-3.8-10-5.2-17-3V9.5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M41 9.5c-7-2.2-12.2-.8-17 3.1v27c4.8-3.8 10-5.2 17-3V9.5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M24 12.6v27" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M11.5 15.5c3.4-.5 6.3.2 9.1 1.7M36.5 15.5c-3.4-.5-6.3.2-9.1 1.7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+<span>Libro de reclamaciones</span>
+</a>
+<div aria-label="Redes sociales MOODBOARD" class="footer-social">
+<a aria-label="Instagram" href="#" title="Instagram">
+<svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="none" height="18" rx="5" stroke="currentColor" stroke-width="1.7" width="18" x="3" y="3"></rect><circle cx="12" cy="12" fill="none" r="4.2" stroke="currentColor" stroke-width="1.7"></circle><circle cx="17.4" cy="6.7" fill="currentColor" r="1"></circle></svg>
+</a>
+<a aria-label="Facebook" href="#" title="Facebook">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v3H6v4h3v4h4v-4h3.2l.8-4H13V9c0-.7.3-1 1-1Z" fill="currentColor"></path></svg>
+</a>
+<a aria-label="TikTok" href="#" title="TikTok">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M15 4c.3 2 1.4 3.4 3.5 4v3.2c-1.4-.1-2.6-.6-3.5-1.3V15a5 5 0 1 1-4.2-4.9v3.2a2 2 0 1 0 1.1 1.8V4H15Z" fill="currentColor"></path></svg>
+</a>
+<a aria-label="WhatsApp" href="#" title="WhatsApp">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20.5 3.5A11.3 11.3 0 0 0 12.1 0 11.9 11.9 0 0 0 1.8 17.7L0 24l6.5-1.7A12 12 0 0 0 24 12a11.8 11.8 0 0 0-3.5-8.5ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4A9.8 9.8 0 1 1 12 21.8Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-2.9-.3-.5.3-.5.9-1.7.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.9 3.4.8.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.3Z" fill="currentColor"></path></svg>
+</a>
+</div>
+</div>
+<div class="footer-legal">
+<span>© 2026 MOOD✦BOARD — ALL RIGHTS RESERVED.</span>
+<span>Moda que representa tu esencia.</span>
+</div>
+</footer>
+<script defer="True" src="../js/pages/mujeres-ropa.js"></script><script src="../js/app.js" defer></script>
+</body>
+</html>

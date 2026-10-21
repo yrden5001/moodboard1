@@ -1,0 +1,37 @@
+/* Estilos extraídos de pages/mujeres-ropa.html */
+
+
+        .catalog-header{max-width:1380px;margin:auto;padding:90px 30px 50px;display:flex;justify-content:space-between;align-items:end;gap:30px}
+        .catalog-header h1{font-family:"Playfair Display",serif;font-size:clamp(55px,7vw,100px);font-weight:400;line-height:.95;margin:0}
+        .catalog-header h1 em{font-style:italic}
+        .catalog-description{max-width:330px;color:var(--muted);font-size:13px;line-height:1.9}
+        .catalog-tools{max-width:1380px;margin:auto;padding:0 30px 35px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
+        .filters{display:flex;gap:25px;flex-wrap:wrap}
+        .filters button{background:none;border:none;cursor:pointer;font-size:11px;color:var(--muted);transition:.2s;padding:0}
+        .filters button:hover,.filters button.active{color:var(--ink)}
+        .catalog-count{font-size:11px;color:var(--muted)}
+        .catalog{max-width:1380px;margin:auto;padding:35px 30px 110px}
+        .products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}
+        .product-card{position:relative;transition:transform .3s ease}
+        .product-card:hover{transform:translateY(-3px)}
+        .product-image{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:transform .6s ease}
+        .product-card:hover .product-image{transform:scale(1.04)}
+        .product-info{padding:17px 0 35px}
+        .product-category{font-size:10px;color:var(--muted);letter-spacing:1px;margin-bottom:7px}
+        .product-name{font-size:13px;margin-bottom:8px}.product-price{font-size:13px;font-weight:500}
+        .add-cart-btn{width:100%;margin-top:16px;padding:13px 10px;background:transparent;border:1px solid var(--accent);color:var(--ink);font-family:"DM Sans",sans-serif;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;transition:all .3s ease}
+        .add-cart-btn:hover{background:var(--accent);color:white}
+        @media(max-width:1000px){.products-grid{grid-template-columns:repeat(3,1fr)}}
+        @media(max-width:700px){.products-grid{grid-template-columns:repeat(2,1fr);gap:25px 12px}.catalog-header{padding:60px 4% 35px;display:block}.catalog-description{margin-top:25px}.catalog-tools{padding:0 4% 30px;display:block}.catalog-count{display:block;margin-top:20px}}
+        @media(max-width:420px){.products-grid{grid-template-columns:1fr}}
+    
+
+
+/* Estilos que antes estaban en atributos HTML */
+.inline-style-mujeres-ropa-1 { display:block;width:100%;height:360px;object-fit:cover;object-position:center; }
+.inline-style-mujeres-ropa-2 { display:block;width:100%;height:360px;object-fit:cover;object-position:center; }
+.inline-style-mujeres-ropa-3 { display:block;width:100%;height:360px;object-fit:cover;object-position:center; }
+.inline-style-mujeres-ropa-4 { display:block;width:100%;height:360px;object-fit:cover;object-position:center; }
+.inline-style-mujeres-ropa-5 { display:block;width:100%;height:360px;object-fit:cover;object-position:center; }
+.inline-style-mujeres-ropa-6 { display:block;width:100%;height:360px;object-fit:cover;object-position:center; }
+.inline-style-mujeres-ropa-7 { display:block;width:100%;height:360px;object-fit:cover;object-position:center; }

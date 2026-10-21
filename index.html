@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MOODBOARD | Clothing Store</title>
+<link href="CSS/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<!-- NAVEGACIÓN -->
+<header class="header">
+<nav class="navbar">
+<a class="logo" href="index.html">
+                MOOD✦BOARD
+            </a>
+<ul class="nav-menu">
+<li>
+<a href="pages/nosotros.html">
+                        Qué somos
+                    </a>
+</li>
+<li class="dropdown">
+<a class="dropdown-title" href="#">
+                        Tienda ▾
+                    </a>
+<div class="dropdown-menu">
+<div>
+<h4>Hombres</h4>
+<a href="pages/hombres-ropa.html">
+                                Ropa
+                            </a>
+<a href="pages/hombres-accesorios.html">
+                                Accesorios
+                            </a>
+</div>
+<div>
+<h4>Mujeres</h4>
+<a href="pages/mujeres-ropa.html">
+                                Ropa
+                            </a>
+<a href="pages/mujeres-accesorios.html">
+                                Accesorios
+                            </a>
+</div>
+</div>
+</li>
+<li>
+<a href="pages/outlet.html">
+                        Outlet
+                    </a>
+</li>
+<li>
+<a href="pages/localizanos.html">
+                        Localízanos
+                    </a>
+</li>
+</ul>
+<div aria-label="Acciones de la tienda" class="nav-actions">
+<button aria-label="Buscar" class="nav-action" title="Buscar" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="M16 16l5 5"></path></svg>
+</button>
+<button aria-label="Favoritos" class="nav-action" title="Favoritos" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20.8 8.8c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10A4.8 4.8 0 0 1 8 4c1.5 0 2.9.7 4 2 1.1-1.3 2.5-2 4-2a4.8 4.8 0 0 1 4.8 4.8Z"></path></svg>
+</button>
+<a aria-label="Carrito de compras" class="nav-action cart" href="pages/carrito.html" title="Carrito">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 9h14l-1 11H6L5 9Z"></path><path d="M9 9V7a3 3 0 0 1 6 0v2"></path></svg>
+<span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</nav>
+</header>
+<!-- HERO PRINCIPAL -->
+<main>
+<section class="hero">
+<div class="hero-content">
+<p class="eyebrow">
+                    MOOD✦BOARD / EST. 2026
+                </p>
+<h1>
+                    Your style.<br/>
+<em>Your mood.</em>
+</h1>
+<p class="hero-description">
+                    Prendas que hablan de ti.
+                    Diseños esenciales, actitud y libertad
+                    para vestir cada versión de quien eres.
+                </p>
+<a class="primary-btn" href="pages/mujeres-ropa.html">
+                    Explorar colección →
+                </a>
+</div>
+<div class="hero-image"></div>
+</section>
+</main>
+<!-- BOTÓN FLOTANTE DEL EQUIPO -->
+<a aria-label="Conoce a nuestro equipo" class="floating-team-button" href="pages/equipo.html" title="Conoce a nuestro equipo">
+<span>✦</span>
+<strong>Nuestro equipo</strong>
+</a>
+<section aria-label="Suscripción al boletín" class="newsletter">
+<div class="newsletter-copy">
+<h2>ÚNETE A LA<br/>COMUNIDAD MOODER</h2>
+<p>Recibe novedades, nuevas colecciones y beneficios exclusivos de MOOD✦BOARD.</p>
+</div>
+<form class="newsletter-form" data-action-submit="subscribeNewsletter(event)">
+<label for="newsletter-email">Déjanos tu correo.</label>
+<div class="newsletter-row">
+<input autocomplete="email" id="newsletter-email" name="email" placeholder="Tu correo electrónico" required="" type="email"/>
+<button type="submit">Unirse al newsletter</button>
+</div>
+<span class="newsletter-note">Al suscribirte aceptas recibir información de MOOD✦BOARD.</span>
+<span aria-live="polite" class="newsletter-message">¡Gracias por unirte a la comunidad MOODER!</span>
+</form>
+</section>
+<footer class="footer">
+<div class="footer-column">
+<h4>Colecciones</h4>
+<a href="pages/hombres-ropa.html">HOMBRE</a>
+<a href="pages/mujeres-ropa.html">MUJER</a>
+<a href="pages/hombres-accesorios.html">ACCESORIOS</a>
+</div>
+<div class="footer-column">
+<h4>Nosotros</h4>
+<a href="pages/nosotros.html">MISIÓN Y VISIÓN</a>
+<a href="pages/equipo.html">PRENSA</a>
+</div>
+<div class="footer-column">
+<h4>Ayuda</h4>
+<a href="pages/localizanos.html">CONTACTO</a>
+<a href="pages/outlet.html">NUESTRAS TIENDAS</a>
+<a href="pages/nosotros.html">TÉRMINOS Y CONDICIONES</a>
+</div>
+<div class="footer-column">
+<h4>Únete a la comunidad MOODER</h4>
+<p>¡HAZTE MIEMBRO Y OBTÉN UN 15% DE DESCUENTO EN EL ARTÍCULO DE MAYOR VALOR!</p>
+<a aria-label="Libro de reclamaciones" class="claims-link" href="https://www.indecopi.gob.pe/libro-de-reclamaciones" rel="noopener" target="_blank" title="Libro de reclamaciones">
+<svg aria-hidden="true" class="claims-book-icon" viewbox="0 0 48 48">
+<path d="M7 9.5c7-2.2 12.2-.8 17 3.1v27c-4.8-3.8-10-5.2-17-3V9.5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M41 9.5c-7-2.2-12.2-.8-17 3.1v27c4.8-3.8 10-5.2 17-3V9.5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M24 12.6v27" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M11.5 15.5c3.4-.5 6.3.2 9.1 1.7M36.5 15.5c-3.4-.5-6.3.2-9.1 1.7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+<span>Libro de reclamaciones</span>
+</a>
+<div aria-label="Redes sociales MOODBOARD" class="footer-social">
+<a aria-label="Instagram" href="#" title="Instagram">
+<svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="none" height="18" rx="5" stroke="currentColor" stroke-width="1.7" width="18" x="3" y="3"></rect><circle cx="12" cy="12" fill="none" r="4.2" stroke="currentColor" stroke-width="1.7"></circle><circle cx="17.4" cy="6.7" fill="currentColor" r="1"></circle></svg>
+</a>
+<a aria-label="Facebook" href="#" title="Facebook">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v3H6v4h3v4h4v-4h3.2l.8-4H13V9c0-.7.3-1 1-1Z" fill="currentColor"></path></svg>
+</a>
+<a aria-label="TikTok" href="#" title="TikTok">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M15 4c.3 2 1.4 3.4 3.5 4v3.2c-1.4-.1-2.6-.6-3.5-1.3V15a5 5 0 1 1-4.2-4.9v3.2a2 2 0 1 0 1.1 1.8V4H15Z" fill="currentColor"></path></svg>
+</a>
+<a aria-label="WhatsApp" href="#" title="WhatsApp">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20.5 3.5A11.3 11.3 0 0 0 12.1 0 11.9 11.9 0 0 0 1.8 17.7L0 24l6.5-1.7A12 12 0 0 0 24 12a11.8 11.8 0 0 0-3.5-8.5ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4A9.8 9.8 0 1 1 12 21.8Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-2.9-.3-.5.3-.5.9-1.7.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.9 3.4.8.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.3Z" fill="currentColor"></path></svg>
+</a>
+</div>
+</div>
+<div class="footer-legal">
+<span>© 2026 MOOD✦BOARD — ALL RIGHTS RESERVED.</span>
+<span>Moda que representa tu esencia.</span>
+</div>
+</footer>
+
+<script defer="True" src="js/pages/index.js"></script><script src="js/app.js" defer></script>
+</body>
+</html>

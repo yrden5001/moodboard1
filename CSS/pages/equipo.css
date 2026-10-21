@@ -1,0 +1,442 @@
+/* Estilos extraídos de pages/equipo.html */
+
+
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+        }
+
+        /* ENCABEZADO ESPECIAL */
+
+        .team-header {
+            padding: 35px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .team-header .brand {
+            font-family: "Playfair Display", serif;
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+
+        .team-header .project-label {
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .back-button {
+            color: var(--ink);
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--ink);
+            padding-bottom: 5px;
+        }
+
+        /* PORTADA */
+
+        .team-cover {
+            min-height: 480px;
+            padding: 80px 9%;
+
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .team-cover small {
+            color: var(--accent);
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .team-cover h1 {
+            margin: 22px 0;
+
+            font-family: "Playfair Display", serif;
+            font-size: clamp(48px, 7vw, 100px);
+            font-weight: 400;
+            line-height: 0.95;
+        }
+
+        .team-cover h1 em {
+            color: var(--accent);
+            font-weight: 400;
+        }
+
+        .team-cover p {
+            max-width: 480px;
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .cover-symbol {
+            height: 330px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--accent);
+            color: var(--accent-soft);
+
+            font-family: "Playfair Display", serif;
+            font-size: 150px;
+
+            transform: rotate(3deg);
+        }
+
+        /* SECCIÓN ACADÉMICA */
+
+        .academic-section {
+            padding: 65px 9%;
+            background: var(--white);
+            border-top: 1px solid #ded8cf;
+            border-bottom: 1px solid #ded8cf;
+        }
+
+        .academic-section .section-label {
+            font-size: 10px;
+            letter-spacing: 3px;
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+
+        .academic-section h2 {
+            max-width: 700px;
+            margin: 18px 0;
+
+            font-family: "Playfair Display", serif;
+            font-size: 42px;
+            font-weight: 400;
+        }
+
+        .academic-section p {
+            max-width: 720px;
+            color: var(--muted);
+            line-height: 1.9;
+            font-size: 14px;
+        }
+
+        /* EQUIPO */
+
+        .members-section {
+            padding: 80px 9%;
+        }
+
+        .members-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+
+        .members-title h2 {
+            margin: 0;
+            font-family: "Playfair Display", serif;
+            font-size: 42px;
+            font-weight: 400;
+        }
+
+        .members-title span {
+            font-size: 11px;
+            color: var(--muted);
+            letter-spacing: 1px;
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .member-card {
+            position: relative;
+            min-height: 285px;
+            padding: 28px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            background: var(--white);
+            border: 1px solid #dcd6cd;
+
+            transition: 0.3s ease;
+        }
+
+        .member-card:hover {
+            background: var(--accent);
+            color: var(--white);
+            transform: translateY(-6px);
+        }
+
+        .member-number {
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 11px;
+            color: var(--accent);
+            letter-spacing: 2px;
+        }
+
+        .member-card h3 {
+            margin: 35px 0 8px;
+
+            font-family: "Playfair Display", serif;
+            font-size: 27px;
+            font-weight: 400;
+        }
+
+        .member-card h4 {
+            margin: 0;
+
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .member-card p {
+            margin-top: 20px;
+
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .member-card:hover p {
+            color: #bdb5ab;
+        }
+
+        .member-card:hover .member-number {
+            color: var(--accent-soft);
+        }
+
+        /* FRASE FINAL */
+
+        .team-ending {
+            padding: 85px 9%;
+            background: var(--accent-soft);
+            text-align: center;
+        }
+
+        .team-ending h2 {
+            margin: 0 auto 20px;
+
+            font-family: "Playfair Display", serif;
+            font-size: clamp(35px, 5vw, 65px);
+            font-weight: 400;
+        }
+
+        .team-ending p {
+            max-width: 580px;
+            margin: auto;
+
+            color: var(--ink-soft);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* PIE */
+
+        .team-footer {
+            padding: 25px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            background: var(--accent);
+            color: #bdb5ab;
+
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 850px) {
+
+            .team-cover {
+                grid-template-columns: 1fr;
+                padding-top: 60px;
+            }
+
+            .cover-symbol {
+                height: 240px;
+                font-size: 110px;
+            }
+
+            .members-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .team-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .team-cover,
+            .academic-section,
+            .members-section {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+
+            .members-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .members-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .team-footer {
+                flex-direction: column;
+            }
+
+        }
+
+
+        /* =====================================================
+           DIRECCIÓN VISUAL EXCLUSIVA — NUESTRO EQUIPO
+        ===================================================== */
+        .team-header {
+            background: var(--accent);
+            color: var(--white);
+            border-bottom-color: var(--accent-dark);
+        }
+        .team-header .project-label { color: rgba(255,255,255,.72); }
+        .team-header .brand { color: var(--white); }
+        .back-button { color: var(--white); border-bottom-color: rgba(255,255,255,.7); }
+
+        .team-cover {
+            position: relative;
+            overflow: hidden;
+            background: var(--paper);
+        }
+        .team-cover::before {
+            content: "04";
+            position: absolute;
+            right: 4%;
+            top: 10%;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(180px, 28vw, 420px);
+            line-height: .7;
+            color: rgba(200,16,46,.045);
+            pointer-events: none;
+        }
+        .cover-symbol {
+            background: var(--footer-dark);
+            color: var(--accent);
+            box-shadow: 18px 18px 0 var(--accent-soft);
+            border: 1px solid var(--footer-dark);
+        }
+
+        .academic-section {
+            background: var(--footer-dark);
+            color: var(--white);
+            border-top-color: var(--footer-dark);
+            border-bottom-color: #2b2426;
+        }
+        .academic-section .section-label { color: #f5b6c1; }
+        .academic-section h2 { color: var(--white); }
+        .academic-section p { color: #cfc3c5; }
+
+        .members-section {
+            background: var(--paper);
+        }
+        .members-title {
+            align-items: end;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--line);
+        }
+        .members-kicker {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--accent);
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .members-count { color: var(--accent-dark) !important; }
+        .members-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+        .member-card {
+            min-height: 330px;
+            border: 1px solid var(--line);
+            overflow: hidden;
+        }
+        .member-card--light { background: var(--white); color: var(--ink); }
+        .member-card--red { background: var(--accent); color: var(--white); border-color: var(--accent); }
+        .member-card--dark { background: var(--footer-dark); color: var(--white); border-color: var(--footer-dark); }
+        .member-card--sand { background: var(--accent-soft); color: var(--ink); border-color: #e9cbd1; }
+        .member-card:hover { transform: translateY(-5px); box-shadow: 0 16px 30px rgba(31,23,24,.10); }
+        .member-card--red:hover, .member-card--dark:hover { background: var(--burgundy); }
+        .member-number { color: var(--accent); }
+        .member-card--red .member-number, .member-card--dark .member-number { color: #ffdce2; }
+        .member-card--sand .member-number { color: var(--accent-dark); }
+        .member-content { position: relative; }
+        .member-initial {
+            width: 54px;
+            height: 54px;
+            margin-bottom: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid currentColor;
+            border-radius: 50%;
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            opacity: .9;
+        }
+        .member-card--red .member-initial,
+        .member-card--dark .member-initial { background: rgba(255,255,255,.08); }
+        .member-card h3 { margin-top: 0; }
+        .member-card--red h4, .member-card--dark h4 { color: #ffc6ce; }
+        .member-card--light p, .member-card--sand p { color: var(--muted); }
+        .member-card--red p, .member-card--dark p { color: #ded1d3; }
+
+        .team-ending {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .team-ending p { color: rgba(255,255,255,.82); }
+
+        /* En equipo no mostramos la suscripción global. */
+        .team-footer {
+            background: var(--footer-dark);
+            color: #d8cbce;
+        }
+
+        @media (max-width: 850px) {
+            .members-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            .members-grid { grid-template-columns: 1fr; }
+            .team-cover::before { font-size: 180px; }
+        }
+
+    

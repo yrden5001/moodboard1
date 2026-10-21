@@ -1,0 +1,6 @@
+Asignación revisada visualmente:
+- Mujeres: únicamente fotografías de modelos mujeres en ropa femenina.
+- Hombres: únicamente fotografías de modelos hombres en ropa masculina.
+- La portada usa la fotografía de grupo photo-1483985988355-763728e1935b.avif.
+- Quiénes somos usa 1000056274--5.png, distinta de la portada y de los modelos de catálogo.
+- Se redujo la cantidad de tarjetas cuando no había una foto distinta y apropiada para evitar repetir o mezclar géneros.

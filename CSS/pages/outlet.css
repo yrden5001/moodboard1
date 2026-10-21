@@ -1,0 +1,445 @@
+/* Estilos extraídos de pages/outlet.html */
+
+
+        /* =================================
+           OUTLET PAGE
+        ================================= */
+
+        .outlet-page {
+            background: var(--paper);
+            color: var(--ink);
+        }
+
+        /* HEADER OUTLET */
+
+        .outlet-hero {
+            position: relative;
+            overflow: hidden;
+
+            padding: 85px 8% 90px;
+
+            background: #0d0b0c;
+            color: var(--white);
+
+            text-align: center;
+        }
+
+        .outlet-hero::before {
+            content: "SALE SALE SALE SALE";
+
+            position: absolute;
+            top: 15px;
+            left: -20px;
+
+            width: 110%;
+
+            color: rgba(200, 16, 46, 0.10);
+
+            font-family: "DM Sans", sans-serif;
+            font-size: clamp(50px, 10vw, 150px);
+            font-weight: 700;
+            letter-spacing: 8px;
+            white-space: nowrap;
+            transform: rotate(-5deg);
+        }
+
+        .outlet-label {
+            position: relative;
+            z-index: 1;
+
+            margin-bottom: 20px;
+
+            color: #e7a0aa;
+
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .outlet-title {
+            position: relative;
+            z-index: 1;
+
+            margin: 0 0 20px;
+
+            font-family: "Playfair Display", serif;
+            font-size: clamp(52px, 8vw, 105px);
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        .outlet-subtitle {
+            position: relative;
+            z-index: 1;
+
+            max-width: 550px;
+            margin: 0 auto;
+
+            color: #c8c1bc;
+
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .outlet-badge {
+            position: relative;
+            z-index: 1;
+
+            display: inline-block;
+
+            margin-top: 30px;
+            padding: 12px 22px;
+
+            border: 1px solid #c8102e;
+
+            color: #ffffff;
+
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* BARRA DE AVISO */
+
+        .outlet-notice {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            padding: 16px 20px;
+
+            background: var(--accent-soft);
+            color: var(--ink);
+
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* FILTROS */
+
+        .outlet-controls {
+            width: 84%;
+            max-width: 1250px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            margin: 55px auto 30px;
+        }
+
+        .outlet-section-title {
+            margin: 0;
+
+            font-family: "Playfair Display", serif;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .outlet-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .outlet-filter {
+            padding: 10px 15px;
+
+            background: transparent;
+            border: 1px solid #c9c4bb;
+
+            color: var(--ink-soft);
+
+            cursor: pointer;
+
+            font-family: "DM Sans", sans-serif;
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            transition: all 0.3s ease;
+        }
+
+        .outlet-filter:hover,
+        .outlet-filter.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--white);
+        }
+
+        /* PRODUCTOS */
+
+        .outlet-products {
+            width: 84%;
+            max-width: 1250px;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+
+            margin: 0 auto 100px;
+        }
+
+        .outlet-card {
+            position: relative;
+
+            overflow: hidden;
+
+            background: var(--white);
+            border: 1px solid #e2ded6;
+
+            transition: transform 0.3s ease;
+        }
+
+        .outlet-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .outlet-discount {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            z-index: 2;
+
+            padding: 8px 10px;
+
+            background: var(--accent);
+            color: var(--white);
+
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .outlet-stock {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 2;
+
+            padding: 7px 9px;
+
+            background: var(--accent-soft);
+            color: var(--ink);
+
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .outlet-image-container {
+            position: relative;
+            overflow: hidden;
+
+            aspect-ratio: 3 / 4;
+
+            background: var(--sand);
+        }
+
+        .outlet-image-container img {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            transition: transform 0.5s ease;
+        }
+
+        .outlet-card:hover .outlet-image-container img {
+            transform: scale(1.05);
+        }
+
+        .outlet-info {
+            padding: 20px;
+        }
+
+        .outlet-category {
+            margin-bottom: 8px;
+
+            color: var(--muted);
+
+            font-size: 9px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .outlet-name {
+            min-height: 40px;
+            margin: 0 0 10px;
+
+            font-family: "Playfair Display", serif;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .outlet-prices {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            margin-bottom: 17px;
+        }
+
+        .outlet-old-price {
+            color: var(--muted);
+
+            font-size: 12px;
+            text-decoration: line-through;
+        }
+
+        .outlet-new-price {
+            color: var(--ink);
+
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+        .outlet-buy-button {
+            width: 100%;
+
+            padding: 13px 10px;
+
+            background: var(--accent);
+            border: 1px solid var(--accent);
+
+            color: var(--white);
+
+            cursor: pointer;
+
+            font-family: "DM Sans", sans-serif;
+            font-size: 10px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+
+            transition: all 0.3s ease;
+        }
+
+        .outlet-buy-button:hover {
+            background: transparent;
+            color: var(--ink);
+        }
+
+        /* MENSAJE FINAL */
+
+        .outlet-footer-message {
+            width: 84%;
+            max-width: 900px;
+
+            margin: 0 auto 100px;
+
+            text-align: center;
+        }
+
+        .outlet-footer-message h2 {
+            margin-bottom: 15px;
+
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        .outlet-footer-message p {
+            color: var(--muted);
+
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* OCULTAR PRODUCTOS */
+
+        .outlet-card.hidden {
+            display: none;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1050px) {
+
+            .outlet-products {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+
+            .outlet-controls {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .outlet-products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .outlet-notice {
+                flex-direction: column;
+                gap: 6px;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .outlet-hero {
+                padding: 65px 7%;
+            }
+
+            .outlet-controls,
+            .outlet-products,
+            .outlet-footer-message {
+                width: 90%;
+            }
+
+            .outlet-products {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .outlet-info {
+                padding: 14px;
+            }
+
+            .outlet-name {
+                font-size: 17px;
+            }
+
+            .outlet-new-price {
+                font-size: 16px;
+            }
+
+            .outlet-old-price {
+                font-size: 11px;
+            }
+
+            .outlet-stock {
+                top: 8px;
+                right: 8px;
+
+                padding: 5px;
+
+                font-size: 8px;
+            }
+
+            .outlet-discount {
+                top: 8px;
+                left: 8px;
+
+                padding: 6px;
+
+                font-size: 9px;
+            }
+
+            .outlet-footer-message h2 {
+                font-size: 32px;
+            }
+        }
+    

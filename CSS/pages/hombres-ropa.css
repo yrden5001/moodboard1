@@ -1,0 +1,373 @@
+/* Estilos extraídos de pages/hombres-ropa.html */
+
+
+
+        /* ==============================
+           ENCABEZADO DE CATÁLOGO
+        ============================== */
+
+        .catalog-header {
+
+            max-width: 1380px;
+
+            margin: auto;
+
+            padding: 90px 30px 50px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: end;
+
+            gap: 30px;
+
+        }
+
+        .catalog-header h1 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(55px, 7vw, 100px);
+
+            font-weight: 400;
+
+            line-height: .95;
+
+        }
+
+        .catalog-header h1 em {
+
+            font-style: italic;
+
+        }
+
+        .catalog-description {
+
+            max-width: 330px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* ==============================
+           BARRA DE FILTROS
+        ============================== */
+
+        .catalog-tools {
+
+            max-width: 1380px;
+
+            margin: auto;
+
+            padding: 0 30px 35px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            border-bottom: 1px solid var(--line);
+
+        }
+
+        .filters {
+
+            display: flex;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+
+        }
+
+        .filters button {
+
+            background: none;
+
+            border: none;
+
+            cursor: pointer;
+
+            font-size: 11px;
+
+            color: var(--muted);
+
+            transition: .2s;
+
+        }
+
+        .filters button:hover,
+
+        .filters button.active {
+
+            color: var(--ink);
+
+        }
+
+        .catalog-count {
+
+            font-size: 11px;
+
+            color: var(--muted);
+
+        }
+
+
+        /* ==============================
+           PRODUCTOS
+        ============================== */
+
+        .catalog {
+
+            max-width: 1380px;
+
+            margin: auto;
+
+            padding: 35px 30px 110px;
+
+        }
+
+        .products {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 25px;
+
+        }
+
+        .product-card {
+
+            position: relative;
+
+        }
+
+        .product-photo {
+
+            aspect-ratio: 3 / 4;
+
+            background: var(--sand);
+
+            overflow: hidden;
+
+            position: relative;
+
+        }
+
+        .product-photo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: transform .6s ease;
+
+        }
+
+        .product-card:hover img {
+
+            transform: scale(1.04);
+
+        }
+
+        .product-label {
+
+            position: absolute;
+
+            top: 14px;
+
+            left: 14px;
+
+            z-index: 2;
+
+            padding: 7px 10px;
+
+            background: white;
+
+            font-size: 9px;
+
+            letter-spacing: 1px;
+
+        }
+
+        .product-info {
+
+            padding: 17px 0 35px;
+
+        }
+
+        .product-category {
+
+            font-size: 10px;
+
+            color: var(--muted);
+
+            letter-spacing: 1px;
+
+        }
+
+        .product-name {
+
+            font-size: 13px;
+
+            font-weight: 400;
+
+            margin-top: 8px;
+
+        }
+
+        .product-price {
+
+            font-size: 13px;
+
+            font-weight: 500;
+
+            margin-top: 8px;
+
+        }
+
+        .product-colors {
+
+            display: flex;
+
+            gap: 6px;
+
+            margin-top: 12px;
+
+        }
+
+        .color {
+
+            width: 11px;
+
+            height: 11px;
+
+            border-radius: 50%;
+
+            border: 1px solid #ccc;
+
+        }
+
+        .black {
+
+            background: var(--accent);
+
+        }
+
+        .cream {
+
+            background: #e7dfce;
+
+        }
+
+        .gray {
+
+            background: var(--muted);
+
+        }
+
+        .blue {
+
+            background: #293c5b;
+
+        }
+
+
+        /* ==============================
+           BOTÓN AGREGAR AL CARRITO
+        ============================== */
+
+        .add-cart-btn {
+
+            width: 100%;
+
+            margin-top: 16px;
+
+            padding: 13px 10px;
+
+            background: transparent;
+
+            border: 1px solid var(--accent);
+
+            color: var(--ink);
+
+            font-family: "DM Sans", sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+
+            cursor: pointer;
+
+            transition: all .3s ease;
+
+        }
+
+        .add-cart-btn:hover {
+
+            background: var(--accent);
+
+            color: white;
+
+        }
+
+
+        /* ==============================
+           RESPONSIVE
+        ============================== */
+
+        @media (max-width: 1000px) {
+
+            .products {
+
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+        }
+
+        @media (max-width: 700px) {
+
+            .catalog-header {
+
+                flex-direction: column;
+
+                align-items: start;
+
+                padding-top: 60px;
+
+            }
+
+            .products {
+
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 15px;
+
+            }
+
+            .catalog,
+
+            .catalog-tools {
+
+                padding-left: 22px;
+
+                padding-right: 22px;
+
+            }
+
+        }
+
+    
